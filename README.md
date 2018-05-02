@@ -13,6 +13,11 @@
 @import url("/e/extend/tibetan-style/tibetan-font.css");
 ```
 
+或者模板文件里添加以下代码：
+```html
+<link rel="stylesheet" href="/e/extend/tibetan-style/tibetan-font.css">
+```
+
 ### 说明
 - 修改了列表模板之列表式分页（采用了BootStrap分页样式，如果不适用于自己的模板或框架，请自行修改 \e\class\t_functions.php 文件）
 - ecmseditor编辑器增加了藏文字体
