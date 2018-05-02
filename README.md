@@ -1,4 +1,4 @@
-# EmpireCMS_7.5_SC_UTF8-Tibetan-Update
+# Tibetan Style for EmpireCMS_7.5
 帝国网站管理系统7.5藏文样式补丁，主要针对藏文网站建设用户，在帝国网站管理系统7.5的后台增加支持藏文字体的完美显示。
 
 ## 安装说明
