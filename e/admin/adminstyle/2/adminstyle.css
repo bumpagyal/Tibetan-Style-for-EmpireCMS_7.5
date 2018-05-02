@@ -1,4 +1,4 @@
-@import url("/e/extend/tibetan-style/tibetan-font.css");
+@import url("../../../../e/extend/tibetan-style/tibetan-font.css");
 a						{ text-decoration: none; color: #002280 }
 a:hover					{ text-decoration: underline }
 body					{ font-size: 9pt; }
