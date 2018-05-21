@@ -8,12 +8,12 @@
 ## 藏文 Web Fonts 调用方法
 本项目集成了两种藏文 Web Fonts 字体以及相对应的文件，字体分别为：珠穆朗玛—乌金萨钦体、珠穆朗玛—乌金萨琼体。关于这两款藏文字体的详细资料可以[点击这里](http://yalasoo.com/Chinese/docs/yalasoo_cn_qomolangma_fonts.html "珠穆朗玛系列藏文字体")阅读。
 
-前台模板里样式表调用代码为：
+前台模板里样式表调用 CSS 代码为：
 ```css
 @import url("/e/extend/tibetan-style/tibetan-font.css");
 ```
 
-或者模板文件里添加以下代码：
+或者模板文件里添加以下 HTML 代码：
 ```html
 <link rel="stylesheet" href="/e/extend/tibetan-style/tibetan-font.css">
 ```
