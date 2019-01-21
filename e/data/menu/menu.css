@@ -1,5 +1,5 @@
 /* CSS Document */
-@import url("../../../e/extend/tibetan-style/tibetan-font.css");
+@import url(//fonts.googleapis.com/earlyaccess/notosanstibetan.css);
 .menu1 {
 	background-image: url(folder1.png);
 	background-repeat: no-repeat;
@@ -55,7 +55,7 @@
 	padding-left: 32px;
 }
 body {
-	font-family: "Qomolangma-Uchen Sarchen";
+	font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans Tibetan", sans-serif;
 	font-size: 9pt;
 	color: #000000;
 	background-color: #ffffff;
