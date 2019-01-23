@@ -1,5 +1,5 @@
 /* CSS Document */
-@import url(//fonts.googleapis.com/earlyaccess/notosanstibetan.css);
+@import url("../../../e/extend/tibetan-style/notosanstibetan.css");
 .menu1 {
 	background-image: url(folder1.png);
 	background-repeat: no-repeat;
