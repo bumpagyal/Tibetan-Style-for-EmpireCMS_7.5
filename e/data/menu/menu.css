@@ -60,7 +60,10 @@ body {
 	color: #000000;
 	background-color: #ffffff;
 }
-	td {font-size: 9pt;}
+table {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Tibetan", sans-serif;
+}
+td {font-size: 9pt;}
 a:link {
 	font-size: 9pt;
 	color: #000000;
