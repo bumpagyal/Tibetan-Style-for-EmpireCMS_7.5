@@ -1,9 +1,9 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstibetan.css);
 a						{ text-decoration: none; color: #002280 }
 a:hover					{ text-decoration: underline }
-body					{ font-size: 9pt; line-height: 1.75; }
+body					{ font-family: "Noto Sans Tibetan", sans-serif; font-size: 9pt; line-height: 1.75; }
 table					{ font: 9pt "Helvetica Neue", Helvetica, Arial, "Noto Sans Tibetan", sans-serif; color: #000000 }
-input,select,textarea	{ font: 9pt/1.75 "Helvetica Neue", Helvetica, Arial, "Noto Sans Tibetan", sans-serif; font-weight: normal; }
+input,select,textarea	{ font: 9pt "Helvetica Neue", Helvetica, Arial, "Noto Sans Tibetan", sans-serif; font-weight: normal; }
 select					{ font: 9pt "Helvetica Neue", Helvetica, Arial, "Noto Sans Tibetan", sans-serif; font-weight: normal; }
 .nav					{ font: 9pt "Helvetica Neue", Helvetica, Arial, "Noto Sans Tibetan", sans-serif; color: #000000; font-weight: bold }
 .nav a					{ color: #000000 }
