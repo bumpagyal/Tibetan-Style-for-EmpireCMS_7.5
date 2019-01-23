@@ -10,12 +10,12 @@
 
 前台模板里调用 Google Fonts 代码为：
 ```css
-@import url(//fonts.googleapis.com/earlyaccess/notosanstibetan.css);
+@import url("/e/extend/tibetan-style/notosanstibetan.css");
 ```
 
 或者模板文件里添加以下 HTML 代码：
 ```html
-<link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanstibetan.css">
+<link rel="stylesheet" href="/e/extend/tibetan-style/notosanstibetan.css">
 ```
 
 样式表文件里调用代码，例如：
