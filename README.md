@@ -5,22 +5,22 @@
 - 先安装帝国网站管理系统7.5【简体UTF-8版】[[下载地址]](http://www.phome.net/download/ "帝国软件下载")
 - 本项目里的 e 目录上传到网站根目录并覆盖文件
 
-## 藏文 Google Fonts 调用方法
-本项目集成了藏文 Google Fonts 字体以及相对应的文件，字体为：Noto Sans Tibetan。关于这款藏文字体的详细资料可以[点击这里](https://fonts.google.com/earlyaccess#Noto+Sans+Tibetan "Noto Sans Tibetan (Tibetan)")阅读。
+## 藏文 Web Fonts 调用方法
+本项目集成了藏文 Web Fonts 字体以及相对应的文件，字体为：Qomolangma-Uchen Sarchen。关于这款藏文字体的详细资料可以[点击这里](http://www.yalasoo.com/Chinese/docs/yalasoo_cn_qomolangma_fonts.html "Qomolangma-Uchen Sarchen (Tibetan)")阅读。
 
-前台模板里调用 Google Fonts 代码为：
+前台模板里调用 Web Fonts 代码为：
 ```css
-@import url("/e/extend/tibetan-style/notosanstibetan.css");
+@import url("/e/extend/tibetan-style/tibetan-fonts.css");
 ```
 
 或者模板文件里添加以下 HTML 代码：
 ```html
-<link rel="stylesheet" href="/e/extend/tibetan-style/notosanstibetan.css">
+<link rel="stylesheet" href="/e/extend/tibetan-style/tibetan-fonts.css">
 ```
 
 样式表文件里调用代码，例如：
 ```css
-font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans Tibetan", sans-serif;
+font-family: "Qomolangma-Uchen Sarchen", "Helvetica Neue", Helvetica, Arial, sans-serif;
 ```
 
 ### 说明

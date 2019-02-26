@@ -80,7 +80,7 @@ CKEDITOR.editorConfig = function( config ) {
 
 	config.allowedContent= true;
 	
-	config.font_names='Noto Sans Tibetan/Noto Sans Tibetan;'+ config.font_names;
+	config.font_names='Qomolangma-Uchen Sarchen/Qomolangma-Uchen Sarchen;'+ config.font_names;
 	
 	// Toolbar
 	config.toolbar_full = [

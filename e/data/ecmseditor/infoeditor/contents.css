@@ -3,12 +3,12 @@ Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 
-@import url("../../../../e/extend/tibetan-style/notosanstibetan.css");
+@import url("../../../../e/extend/tibetan-style/tibetan-fonts.css");
 
 body
 {
 	/* Font */
-	font-family: "Noto Sans Tibetan", sans-serif;
+	font-family: "Qomolangma-Uchen Sarchung", sans-serif;
 	font-size: 12px;
 
 	/* Text color */
@@ -32,7 +32,7 @@ body
 blockquote
 {
 	font-style: italic;
-	font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans Tibetan", sans-serif;
+	font-family: "Qomolangma-Uchen Sarchen", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 2px 0;
 	border-style: solid;
 	border-color: #ccc;
