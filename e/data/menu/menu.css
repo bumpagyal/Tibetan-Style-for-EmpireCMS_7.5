@@ -1,5 +1,8 @@
 /* CSS Document */
 @import url("../../../e/extend/tibetan-style/tibetan-fonts.css");
+body, table {
+	font-family: "Qomolangma-Uchen Sarchen", sans-serif;
+}
 .menu1 {
 	background-image: url(folder1.png);
 	background-repeat: no-repeat;
@@ -55,15 +58,11 @@
 	padding-left: 32px;
 }
 body {
-	font-family: "Qomolangma-Uchen Sarchen", sans-serif;
 	font-size: 9pt;
 	color: #000000;
 	background-color: #ffffff;
 }
-table {
-	font-family: "Qomolangma-Uchen Sarchen","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-td {font-size: 9pt;}
+	td {font-size: 9pt;}
 a:link {
 	font-size: 9pt;
 	color: #000000;
