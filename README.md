@@ -24,7 +24,7 @@ font-family: "Qomolangma-Uchen Sarchen", "Helvetica Neue", Helvetica, Arial, san
 ```
 
 ### 说明
-- 修改了列表模板之列表式分页（采用了BootStrap分页样式，如果不适用于自己的模板或框架，请自行修改 \e\class\t_functions.php 文件）
+- 增加了对BootStrap分页样式的支持，如果需要使用请到帝国cms后台，找到【系统】-【系统参数设置】-【信息设置】-【列表分页函数(列表)】，把里面的函数换成【user_ShowListMorePage】函数
 - ecmseditor编辑器增加了藏文字体
 - 增加了信息管理列表中的标题字数
 - 简体中文语言包里常用的一部分翻译成了藏文
