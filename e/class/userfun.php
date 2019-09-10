@@ -1,7 +1,7 @@
 <?php
 //---------------------------用户自定义标签函数文件
 //列表模板之列表式分页
-function sys_ShowListMorePage($num,$page,$dolink,$type,$totalpage,$line,$ok,$search="",$add){
+function user_ShowListMorePage($num,$page,$dolink,$type,$totalpage,$line,$ok,$search="",$add){
 	global $fun_r,$public_r;
 	if($num<=$line)
 	{
