@@ -8,7 +8,7 @@
 ## 藏文 Web Fonts 调用方法
 本项目集成了藏文 Web Fonts 字体以及相对应的文件，字体为：Qomolangma-Uchen Sarchen。关于这款藏文字体的详细资料可以[点击这里](http://www.yalasoo.com/Chinese/docs/yalasoo_cn_qomolangma_fonts.html "Qomolangma-Uchen Sarchen (Tibetan)")阅读。
 
-前台模板里调用 Web Fonts 代码为：
+前台CSS样式表文件调用如下代码：
 ```css
 @font-face{font-family:'Qomolangma-Uchen Sarchung';src:local('Qomolangma-Uchen Sarchung'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.woff2') format('woff2'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.woff') format('woff'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.ttf') format('truetype'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.eot') format('embedded-opentype');unicode-range:U+0F00-0FFF}
 @font-face{font-family:'Qomolangma-Uchen Sarchen';src:local('Qomolangma-Uchen Sarchen'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.woff2') format('woff2'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.woff') format('woff'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.ttf') format('truetype'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.eot') format('embedded-opentype');unicode-range:U+0F00-0FFF}
