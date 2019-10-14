@@ -86,7 +86,7 @@ function page1($num,$line,$page_line,$start,$page,$search){
 ```
 在模板文件里分页处记得要添加BootStrap分页样式class类，例如：
 ```html
-<nav>
-<ul class="pagination">[!--show.page--]</ul>
+<nav class="pagination-wrap text-center">
+	<ul class="pagination">[!--show.page--]</ul>
 </nav>
 ```
