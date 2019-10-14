@@ -21,7 +21,7 @@
 
 样式表文件里调用代码，例如：
 ```css
-font-family: "Qomolangma-Uchen Sarchung", Georgia, "Times New Roman", Times, serif;;
+font-family: "Qomolangma-Uchen Sarchung", Georgia, "Times New Roman", Times, serif;
 ```
 或
 ```css
