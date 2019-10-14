@@ -10,7 +10,8 @@
 
 前台模板里调用 Web Fonts 代码为：
 ```css
-@import url("/e/extend/tibetan-style/tibetan-fonts.css");
+@font-face{font-family:'Qomolangma-Uchen Sarchung';src:local('Qomolangma-Uchen Sarchung'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.woff2') format('woff2'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.woff') format('woff'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.ttf') format('truetype'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.eot') format('embedded-opentype');unicode-range:U+0F00-0FFF}
+@font-face{font-family:'Qomolangma-Uchen Sarchen';src:local('Qomolangma-Uchen Sarchen'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.woff2') format('woff2'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.woff') format('woff'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.ttf') format('truetype'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.eot') format('embedded-opentype');unicode-range:U+0F00-0FFF}
 ```
 
 或者模板文件里添加以下 HTML 代码：
@@ -19,6 +20,10 @@
 ```
 
 样式表文件里调用代码，例如：
+```css
+font-family: "Qomolangma-Uchen Sarchung", Georgia, "Times New Roman", Times, serif;;
+```
+或
 ```css
 font-family: "Qomolangma-Uchen Sarchen", "Helvetica Neue", Helvetica, Arial, sans-serif;
 ```
