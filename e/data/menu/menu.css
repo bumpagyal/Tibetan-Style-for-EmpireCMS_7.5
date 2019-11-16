@@ -1,7 +1,7 @@
 /* CSS Document */
-@import url("../../../e/extend/tibetan-style/tibetan-fonts.css");
+@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap&subset=tibetan');
 body, table {
-	font-family: "Qomolangma-Uchen Sarchen", sans-serif;
+	font-family: Jomolhari, serif;
 }
 .menu1 {
 	background-image: url(folder1.png);

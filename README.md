@@ -6,29 +6,27 @@
 - 本项目里的 e 目录上传到网站根目录并覆盖文件
 
 ## 藏文 Web Fonts 调用方法
-本项目集成了藏文 Web Fonts 字体以及相对应的文件，字体为：Qomolangma-Uchen Sarchen。关于这款藏文字体的详细资料可以[点击这里](http://www.yalasoo.com/Chinese/docs/yalasoo_cn_qomolangma_fonts.html "Qomolangma-Uchen Sarchen (Tibetan)")阅读。
+本项目采用了 Google Fonts 字体 Jomolhari 关于这款藏文字体的详细资料可以[点击这里](https://fonts.google.com/specimen/Jomolhari "https://fonts.google.com/specimen/Jomolhari")阅读。
 
 前台CSS样式表文件调用如下代码：
-```css
-@font-face{font-family:'Qomolangma-Uchen Sarchung';src:local('Qomolangma-Uchen Sarchung'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.woff2') format('woff2'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.woff') format('woff'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.ttf') format('truetype'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchung.eot') format('embedded-opentype');unicode-range:U+0F00-0FFF}
-@font-face{font-family:'Qomolangma-Uchen Sarchen';src:local('Qomolangma-Uchen Sarchen'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.woff2') format('woff2'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.woff') format('woff'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.ttf') format('truetype'),url('../../../e/extend/tibetan-style/fonts/Qomolangma-UchenSarchen.eot') format('embedded-opentype');unicode-range:U+0F00-0FFF}
+```html
+<style>
+@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap&subset=tibetan');
+</style>
 ```
 
 或者模板文件里添加以下 HTML 代码：
 ```html
-<link rel="stylesheet" href="/e/extend/tibetan-style/tibetan-fonts.css">
+<link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap&subset=tibetan" rel="stylesheet">
 ```
 
 样式表文件里调用代码，例如：
 ```css
-font-family: "Qomolangma-Uchen Sarchung", Georgia, "Times New Roman", Times, serif;
-```
-或
-```css
-font-family: "Qomolangma-Uchen Sarchen", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: 'Jomolhari', serif;
 ```
 
 ### 说明
+- 如果需要珠穆朗玛藏文字体版本，请在本项目的releases里下载v1.0版本
 - 增加了对BootStrap分页样式的支持，如果需要使用请到帝国cms后台，找到【系统】-【系统参数设置】-【信息设置】-【列表分页函数(列表)】，把里面的函数换成【user_ShowListMorePage】函数
 - ecmseditor编辑器增加了藏文字体
 - 增加了信息管理列表中的标题字数
