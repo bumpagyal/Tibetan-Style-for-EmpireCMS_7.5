@@ -6,23 +6,31 @@
 - 本项目里的 e 目录上传到网站根目录并覆盖文件
 
 ## 藏文 Web Fonts 调用方法
-本项目采用了 Google Fonts 字体 Jomolhari 关于这款藏文字体的详细资料可以[点击这里](https://fonts.google.com/specimen/Jomolhari "https://fonts.google.com/specimen/Jomolhari")阅读。
+本项目采用了 Google Fonts 字体 Jomolhari 关于这款藏文字体的详细资料可以[https://fonts.google.com/specimen/Jomolhari](https://fonts.google.com/specimen/Jomolhari "https://fonts.google.com/specimen/Jomolhari")阅读。
 
 前台CSS样式表文件调用如下代码：
-```html
-<style>
-@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap&subset=tibetan');
-</style>
-```
-
-或者模板文件里添加以下 HTML 代码：
-```html
-<link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap&subset=tibetan" rel="stylesheet">
-```
-
-样式表文件里调用代码，例如：
 ```css
-font-family: 'Jomolhari', serif;
+/* tibetan */
+@font-face {
+	font-family: 'Jomolhari';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Jomolhari Regular'), local('Jomolhari-Regular'), url(https://fonts.gstatic.com/s/jomolhari/v1/EvONzA1M1Iw_CBd2hsQyBVgYCK1YNzvX.woff2) format('woff2');
+	unicode-range: U+0F00-0FFF, U+200C-200D, U+25CC;
+}
+/* latin */
+@font-face {
+	font-family: 'Jomolhari';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('-apple-system'), local('BlinkMacSystemFont'), local('Segoe UI'), local('Roboto'), local('Oxygen-Sans'), local('Ubuntu'), local('Cantarell'), local('Helvetica Neue'), url(https://fonts.gstatic.com/s/jomolhari/v1/EvONzA1M1Iw_CBd2hsQyEFgY.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+	font-family: Jomolhari, sans-serif;
+}
 ```
 
 ### 说明
