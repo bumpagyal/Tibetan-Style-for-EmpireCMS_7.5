@@ -80,7 +80,7 @@ CKEDITOR.editorConfig = function( config ) {
 
 	config.allowedContent= true;
 	
-	config.font_names='Jomolhari/Jomolhari;'+ config.font_names;
+	config.font_names='Kailasa/Kailasa;Himalaya/Microsoft Himalaya;'+ config.font_names;
 	
 	// Toolbar
 	config.toolbar_full = [
