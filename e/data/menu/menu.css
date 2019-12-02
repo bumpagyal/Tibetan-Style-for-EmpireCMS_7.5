@@ -1,16 +1,14 @@
 /* CSS Document */
-@media (min-width: 992px) {
-	/* tibetan */
-	@font-face {
-		font-family: 'Microsoft Himalaya';
-		font-style: normal;
-		font-weight: 400;
-		src: url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.gif?r=123479631126');
-		src: url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.gif?r=123479631126?#iefix') format('embedded-opentype'),
-			 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.png?r=123479631126') format('woff2'),
-			 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.bmp?r=123479631126') format('woff'),
-			 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.jpg?r=123479631126') format('truetype');
-	}
+/* tibetan */
+@font-face {
+	font-family: 'Microsoft Himalaya';
+	font-style: normal;
+	font-weight: 400;
+	src: url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.gif?r=123479631126');
+	src: url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.gif?r=123479631126?#iefix') format('embedded-opentype'),
+		 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.png?r=123479631126') format('woff2'),
+		 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.bmp?r=123479631126') format('woff'),
+		 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.jpg?r=123479631126') format('truetype');
 }
 
 body, table {
