@@ -22,7 +22,7 @@
 		 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.jpg?r=123479631126') format('truetype');
 }
 body {
-	font-family: "Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",Kailasa,"Microsoft Himalaya",sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Kokonor,Kailasa,"Microsoft Himalaya",sans-serif;
 }
 ```
 
