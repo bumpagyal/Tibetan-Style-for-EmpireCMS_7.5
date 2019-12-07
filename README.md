@@ -7,24 +7,14 @@
 - 升级时如果您改了“e/admin”目录名，请先将目录名改回“e/admin”；（升级完成后再修改回来）
 
 ## 藏文 Web Fonts 调用方法
-本项目采用了有字库提供的Webfont字体Microsoft Himalaya关于这款藏文字体的详细资料可以访问[https://cdn.res.webfont.com/fonts/47809.html](https://cdn.res.webfont.com/fonts/47809.html "https://cdn.res.webfont.com/fonts/47809.html")阅读了解更多。
+本项目采用了有字库提供的Webfont字体Qomolangma关于这款藏文字体的详细资料可以访问[https://cdn.res.webfont.com/fonts/46850.html](https://cdn.res.webfont.com/fonts/46850.html "https://cdn.res.webfont.com/fonts/46850.html")阅读了解更多。
 
 前台CSS样式表文件调用如下代码：
 ```css
-/* tibetan */
-@font-face {
-	font-family: 'Microsoft Himalaya';
-	font-style: normal;
-	font-weight: 400;
-	src: url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.gif?r=123479631126');
-	src: url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.gif?r=123479631126?#iefix') format('embedded-opentype'),
-		 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.png?r=123479631126') format('woff2'),
-		 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.bmp?r=123479631126') format('woff'),
-		 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.jpg?r=123479631126') format('truetype');
-}
+@import url(//cdn.repository.webfont.com/webfonts/nomal/3041/46850/5de1e73ef629d80f0078ff0c.css);
 
 body {
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Kokonor,Kailasa,"Microsoft Himalaya",sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Kokonor,"Qomolangma",sans-serif;
 }
 ```
 

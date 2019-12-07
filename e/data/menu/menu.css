@@ -1,18 +1,8 @@
 /* CSS Document */
-/* tibetan */
-@font-face {
-	font-family: 'Microsoft Himalaya';
-	font-style: normal;
-	font-weight: 400;
-	src: url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.gif?r=123479631126');
-	src: url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.gif?r=123479631126?#iefix') format('embedded-opentype'),
-		 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.png?r=123479631126') format('woff2'),
-		 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.bmp?r=123479631126') format('woff'),
-		 url('//cdn.repository.webfont.com/webfonts/nomal/3041/47809/5de1e7cef629d80f0078ff0d.jpg?r=123479631126') format('truetype');
-}
+@import url(//cdn.repository.webfont.com/webfonts/nomal/3041/46850/5de1e73ef629d80f0078ff0c.css);
 
 body, table {
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Kokonor,Kailasa,"Qomolangma-Uchen Sarchen","Microsoft Himalaya",sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Kokonor,"Qomolangma-Uchen Sarchen","Qomolangma",sans-serif;
 }
 .menu1 {
 	background-image: url(folder1.png);
