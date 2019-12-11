@@ -5,16 +5,19 @@
 - 先安装帝国网站管理系统7.5【简体UTF-8版】[[下载地址]](http://www.phome.net/download/ "帝国软件下载")
 - 本项目里的 e 目录上传到网站根目录并覆盖文件
 - 升级时如果您改了“e/admin”目录名，请先将目录名改回“e/admin”；（升级完成后再修改回来）
+- 升级时如果您改了"e/class/userfun.php"文件，先备份一下然后添加自定义代码
 
-## 藏文 Web Fonts 调用方法
-本项目采用了有字库提供的Webfont字体Qomolangma关于这款藏文字体的详细资料可以访问[https://cdn.res.webfont.com/fonts/46850.html](https://cdn.res.webfont.com/fonts/46850.html "https://cdn.res.webfont.com/fonts/46850.html")阅读了解更多。
+## 藏文 Web onts 调用方法
+
+前台HTML页面上调用如下代码：
+```html
+<script src="/e/extend/tibetan-style/js/tibetan-plugin.js"></script>
+```
 
 前台CSS样式表文件调用如下代码：
 ```css
-@import url(//cdn.repository.webfont.com/webfonts/nomal/3041/46850/5de1e73ef629d80f0078ff0c.css);
-
 body {
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Kokonor,"Qomolangma",sans-serif;
+	font-family: "Segoe UI","Helvetica Neue",Kokonor,Kailasa,"Tibetan Machine Uni","Noto Sans Tibetan",sans-serif;
 }
 ```
 

@@ -3,12 +3,12 @@ Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 
-@import url(//cdn.repository.webfont.com/webfonts/nomal/3041/46850/5de1e73ef629d80f0078ff0c.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanstibetan.css);
 
 body
 {
 	/* Font */
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Kokonor,"Qomolangma",sans-serif;
+	font-family: "Segoe UI","Helvetica Neue",Kokonor,"Qomolangma-Uchen Sarchung","Noto Sans Tibetan",sans-serif;
 	font-size: 12px;
 
 	/* Text color */
@@ -32,7 +32,7 @@ body
 blockquote
 {
 	font-style: italic;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Kokonor,"Qomolangma-Uchen Sarchen","Qomolangma",sans-serif;
+	font-family: "Segoe UI","Helvetica Neue",Kokonor,"Qomolangma-Uchen Sarchen","Noto Sans Tibetan",sans-serif;
 	padding: 2px 0;
 	border-style: solid;
 	border-color: #ccc;
