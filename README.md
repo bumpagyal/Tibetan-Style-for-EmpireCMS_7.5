@@ -11,7 +11,7 @@
 
 前台HTML页面上调用如下代码：
 ```html
-<script src="/e/extend/tibetan-style/js/tibetan-plugin.js"></script>
+<script src="[!--news.url--]e/extend/tibetan-style/js/tibetan-plugin.js"></script>
 ```
 
 前台CSS样式表文件调用如下代码：
