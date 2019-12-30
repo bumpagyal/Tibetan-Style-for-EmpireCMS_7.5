@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
 
 body, table {
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","Qomolangma-Uchen Sarchen","Kokonor","Kailasa","Tibetan Machine Uni","Jomolhari","Noto Sans Tibetan","Microsoft Himalaya",sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","Qomolangma-Uchen Sarchen",Kokonor,Kailasa,"Tibetan Machine Uni",Jomolhari,"Noto Sans Tibetan","Microsoft Himalaya",sans-serif;
 }
 .menu1 {
 	background-image: url(folder1.png);
