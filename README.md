@@ -17,7 +17,7 @@
 前台CSS样式表文件调用如下代码：
 ```css
 body {
-	font-family: "Segoe UI","Helvetica Neue",Kokonor,Kailasa,"Tibetan Machine Uni","Noto Sans Tibetan",sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","Kokonor","Kailasa","Tibetan Machine Uni","Jomolhari","Noto Sans Tibetan","Microsoft Himalaya",sans-serif;
 }
 ```
 
