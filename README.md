@@ -42,20 +42,20 @@ function page1($num,$line,$page_line,$start,$page,$search){
 	$url=eReturnSelfPage(0).'?page';
 	$snum=2;//最小页数
 	$totalpage=ceil($num/$line);//取得总页数
-	$firststr='<li class="disabled"><a title="'.$fun_r['trecord'].'" aria-label="Previous">'.$num.'</a></li>';
+	$firststr='<li class="page-item class="disabled"><a class="page-link" title="'.$fun_r['trecord'].'" aria-label="Previous">'.$num.'</a></li>';
 	//上一页
 	if($page<>0)
 	{
-		$toppage='<li><a href="'.$url.'=0'.$search.'">'.$fun_r['startpage'].'</a></li>';
+		$toppage='<li class="page-item"><a class="page-link" href="'.$url.'=0'.$search.'">'.$fun_r['startpage'].'</a></li>';
 		$pagepr=$page-1;
-		$prepage='<li><a href="'.$url.'='.$pagepr.$search.'">'.$fun_r['pripage'].'</a></li>';
+		$prepage='<li class="page-item"><a class="page-link" href="'.$url.'='.$pagepr.$search.'">'.$fun_r['pripage'].'</a></li>';
 	}
 	//下一页
 	if($page!=$totalpage-1)
 	{
 		$pagenex=$page+1;
-		$nextpage='<li><a href="'.$url.'='.$pagenex.$search.'">'.$fun_r['nextpage'].'</a></li>';
-		$lastpage='<li><a href="'.$url.'='.($totalpage-1).$search.'">'.$fun_r['lastpage'].'</a></li>';
+		$nextpage='<li class="page-item"><a class="page-link" href="'.$url.'='.$pagenex.$search.'">'.$fun_r['nextpage'].'</a></li>';
+		$lastpage='<li class="page-item"><a class="page-link" href="'.$url.'='.($totalpage-1).$search.'">'.$fun_r['lastpage'].'</a></li>';
 	}
 	$starti=$page-$snum<0?0:$page-$snum;
 	$no=0;
@@ -64,12 +64,12 @@ function page1($num,$line,$page_line,$start,$page,$search){
 		$no++;
 		if($page==$i)
 		{
-			$is_1='<li class="active"><a href="#">';
+			$is_1='<li class="page-item class="active"><a class="page-link" href="#">';
 			$is_2='<span class="sr-only">(current)</span></a></li>';
 		}
 		else
 		{
-			$is_1='<li><a href="'.$url.'='.$i.$search.'">';
+			$is_1='<li class="page-item"><a class="page-link" href="'.$url.'='.$i.$search.'">';
 			$is_2="</a></li>";
 		}
 		$pagenum=$i+1;
@@ -81,7 +81,7 @@ function page1($num,$line,$page_line,$start,$page,$search){
 ```
 在模板文件里分页处记得要添加BootStrap分页样式class类，例如：
 ```html
-<nav class="pagination-wrap text-center">
-	<ul class="pagination">[!--show.page--]</ul>
+<nav aria-label="Page navigation example">
+	<ul class="pagination justify-content-center">[!--show.page--]</ul>
 </nav>
 ```
