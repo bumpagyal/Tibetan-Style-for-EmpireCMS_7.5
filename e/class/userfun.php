@@ -18,11 +18,11 @@ function user_ShowListMorePage($num,$page,$dolink,$type,$totalpage,$line,$ok,$se
 	$page_line=$public_r['listpagelistnum'];
 	$snum=2;
 	//$totalpage=ceil($num/$line);//取得总页数
-	$firststr='<li class="disabled"><a title="Total record">'.$num.'</a></li>';
+	$firststr='<li class="page-item class="disabled"><a class="page-link" title="Total record">'.$num.'</a></li>';
 	//上一页
 	if($page<>1)
 	{
-		$toppage='<li><a href="'.$dolink.$add['dofile'].$type.'">'.$fun_r['startpage'].'</a></li>';
+		$toppage='<li class="page-item"><a class="page-link" href="'.$dolink.$add['dofile'].$type.'">'.$fun_r['startpage'].'</a></li>';
 		$pagepr=$page-1;
 		if($pagepr==1)
 		{
@@ -32,7 +32,7 @@ function user_ShowListMorePage($num,$page,$dolink,$type,$totalpage,$line,$ok,$se
 		{
 			$prido=$add['dofile'].'_'.$pagepr.$type;
 		}
-		$prepage='<li><a href="'.$dolink.$prido.'">'.$fun_r['pripage'].'</a></li>';
+		$prepage='<li class="page-item"><a class="page-link" href="'.$dolink.$prido.'">'.$fun_r['pripage'].'</a></li>';
 	}
 	//下一页
 	if($page!=$totalpage)
@@ -40,8 +40,8 @@ function user_ShowListMorePage($num,$page,$dolink,$type,$totalpage,$line,$ok,$se
 		$pagenex=$page+1;
 		$nextpagelink=$repagenum&&$repagenum<$pagenex?eReturnRewritePageLink2($add,$pagenex):$dolink.$add['dofile'].'_'.$pagenex.$type;
 		$lastpagelink=$repagenum&&$repagenum<$totalpage?eReturnRewritePageLink2($add,$totalpage):$dolink.$add['dofile'].'_'.$totalpage.$type;
-		$nextpage='<li><a href="'.$nextpagelink.'">'.$fun_r['nextpage'].'</a></li>';
-		$lastpage='<li><a href="'.$lastpagelink.'">'.$fun_r['lastpage'].'</a></li>';
+		$nextpage='<li class="page-item"><a class="page-link" href="'.$nextpagelink.'">'.$fun_r['nextpage'].'</a></li>';
+		$lastpage='<li class="page-item"><a class="page-link" href="'.$lastpagelink.'">'.$fun_r['lastpage'].'</a></li>';
 	}
 	$starti=$page-$snum<1?1:$page-$snum;
 	$no=0;
@@ -50,18 +50,18 @@ function user_ShowListMorePage($num,$page,$dolink,$type,$totalpage,$line,$ok,$se
 		$no++;
 		if($page==$i)
 		{
-			$is_1='<li class="active"><a href="#">';
+			$is_1='<li class="page-item class="active"><a class="page-link" href="#">';
 			$is_2='</a></li>';
 		}
 		elseif($i==1)
 		{
-			$is_1='<li><a href="'.$dolink.$add['dofile'].$type.'">';
+			$is_1='<li class="page-item"><a class="page-link" href="'.$dolink.$add['dofile'].$type.'">';
 			$is_2="</a></li>";
 		}
 		else
 		{
 			$thispagelink=$repagenum&&$repagenum<$i?eReturnRewritePageLink2($add,$i):$dolink.$add['dofile'].'_'.$i.$type;
-			$is_1='<li><a href="'.$thispagelink.'">';
+			$is_1='<li class="page-item"><a class="page-link" href="'.$thispagelink.'">';
 			$is_2="</a></li>";
 		}
 		$returnstr.=''.$is_1.$i.$is_2;
