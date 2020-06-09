@@ -1,8 +1,21 @@
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
+/*
+ * Noto Sans Tibetan (Tibetan) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans Tibetan';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.eot);
+  src: url(../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.woff2) format('woff2'),
+       url(../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.woff) format('woff'),
+       url(../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.ttf) format('truetype');
+}
 
 body, table {
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","Qomolangma-Uchen Sarchen",Kokonor,Kailasa,"Tibetan Machine Uni",Jomolhari,"Noto Sans Tibetan","Microsoft Himalaya",sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Kokonor,"Tibetan Machine Uni","Noto Sans Tibetan",sans-serif;
+	line-height: 1.85;
 }
 .menu1 {
 	background-image: url(folder1.png);
