@@ -17,7 +17,7 @@
 前台CSS样式表文件调用如下代码：
 ```css
 body {
-	font-family: "Segoe UI","Helvetica Neue","Noto Sans Tibetan",sans-serif;
+	font-family: "Noto Sans Tibetan","Segoe UI","Helvetica Neue",sans-serif;
 }
 ```
 
