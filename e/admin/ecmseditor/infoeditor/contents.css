@@ -1,26 +1,14 @@
+@import url("/e/extend/tibetan-style/css/base-style.min.css");
+
 /*
 Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 
-/*
- * Noto Sans Tibetan (Tibetan) http://www.google.com/fonts/earlyaccess
- */
-@font-face {
-  font-family: 'Noto Sans Tibetan';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.eot);
-  src: url(../../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.eot?#iefix) format('embedded-opentype'),
-       url(../../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.woff2) format('woff2'),
-       url(../../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.woff) format('woff'),
-       url(../../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.ttf) format('truetype');
-}
-
 body
 {
 	/* Font */
-	font-family: "Noto Sans Tibetan","Segoe UI","Helvetica Neue",sans-serif;
+	font-family: Arial, Verdana, "Trebuchet MS", sans-serif;
 	font-size: 12px;
 
 	/* Text color */
@@ -34,7 +22,7 @@ body
 
 .cke_editable
 {
-	font-size: 12pt;
+	font-size: 16px;
 	line-height: 1.8;
 
 	/* Fix for missing scrollbars with RTL texts. (#10488) */
@@ -44,7 +32,7 @@ body
 blockquote
 {
 	font-style: italic;
-	font-family: "Noto Sans Tibetan","Segoe UI","Helvetica Neue",sans-serif;
+	font-family: Georgia, Times, "Times New Roman", serif;
 	padding: 2px 0;
 	border-style: solid;
 	border-color: #ccc;
