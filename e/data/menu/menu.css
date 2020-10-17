@@ -1,22 +1,6 @@
-/* CSS Document */
-/*
- * Noto Sans Tibetan (Tibetan) http://www.google.com/fonts/earlyaccess
- */
-@font-face {
-  font-family: 'Noto Sans Tibetan';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.eot);
-  src: url(../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.eot?#iefix) format('embedded-opentype'),
-       url(../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.woff2) format('woff2'),
-       url(../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.woff) format('woff'),
-       url(../../extend/tibetan-style/fonts/NotoSansTibetan-Regular.ttf) format('truetype');
-}
+@import url("/e/extend/tibetan-style/css/base-style.min.css");
 
-body, table {
-	font-family: "Noto Sans Tibetan","Segoe UI","Helvetica Neue",sans-serif;
-	line-height: 1.85;
-}
+/* CSS Document */
 .menu1 {
 	background-image: url(folder1.png);
 	background-repeat: no-repeat;
@@ -72,6 +56,7 @@ body, table {
 	padding-left: 32px;
 }
 body {
+	font-family: Arial, Verdana, "Trebuchet MS", sans-serif;
 	font-size: 9pt;
 	color: #000000;
 	background-color: #ffffff;
