@@ -24,7 +24,7 @@ body {
 
 ### 说明
 - 本项目采用"Jomolhari"作为默认藏文字体
-- 如果需要"珠穆朗玛"藏文字体版本，请在本项目的releases里下载v2.1.4版本
+- 如果需要"Noto Sans Tibetan"藏文字体版本，请在本项目的releases里下载v2.1.4版本
 - 如果需要"珠穆朗玛"藏文字体版本，请在本项目的releases里下载v1.0版本
 - 增加了对BootStrap 4 中分页样式的支持，如果需要使用请到帝国cms后台，找到【系统】-【系统参数设置】-【信息设置】-【列表分页函数(列表)】，把里面的函数换成【user_ShowListMorePage】函数
 - ecmseditor编辑器增加了藏文字体
