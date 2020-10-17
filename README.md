@@ -11,18 +11,20 @@
 
 前台HTML页面上调用如下代码：
 ```html
+<link rel="stylesheet" href="/e/extend/tibetan-style/css/base-style.min.css">
 <script src="[!--news.url--]e/extend/tibetan-style/js/tibetan-plugin.js"></script>
 ```
 
 前台CSS样式表文件调用如下代码：
 ```css
 body {
-	font-family: "Noto Sans Tibetan","Segoe UI","Helvetica Neue",sans-serif;
+	font-family: Georgia, Times, "Times New Roman", Kokonor, "Tibetan Machine Uni", Jomolhari, serif;
 }
 ```
 
 ### 说明
-- 本项目采用"Noto Sans Tibetan"作为默认藏文字体
+- 本项目采用"Jomolhari"作为默认藏文字体
+- 如果需要"珠穆朗玛"藏文字体版本，请在本项目的releases里下载v2.1.4版本
 - 如果需要"珠穆朗玛"藏文字体版本，请在本项目的releases里下载v1.0版本
 - 增加了对BootStrap 4 中分页样式的支持，如果需要使用请到帝国cms后台，找到【系统】-【系统参数设置】-【信息设置】-【列表分页函数(列表)】，把里面的函数换成【user_ShowListMorePage】函数
 - ecmseditor编辑器增加了藏文字体
