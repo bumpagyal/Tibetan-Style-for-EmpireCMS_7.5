@@ -80,7 +80,7 @@ CKEDITOR.editorConfig = function( config ) {
 
 	config.allowedContent= true;
 	
-	config.font_names='Kailasa/Kailasa;Himalaya/Microsoft Himalaya;NotoSansTibetan/Noto Sans Tibetan;'+ config.font_names;
+	config.font_names='Jomolhari/Jomolhari;宋体/宋体;黑体/黑体;仿宋/仿宋_GB2312;楷体/楷体_GB2312;隶书/隶书;幼圆/幼圆;微软雅黑/微软雅黑;'+ config.font_names;
 	
 	// Toolbar
 	config.toolbar_full = [
@@ -117,26 +117,10 @@ CKEDITOR.editorConfig = function( config ) {
 ];
 
 
-	// Toolbar
-	config.toolbar_custom = [
-	{ name: 'document', groups: [ 'mode', 'document', 'doctools' ], items: [ 'Source' ] },
-	{ name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'NewPage', 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
-	{ name: 'styles', items: [ 'Font', 'FontSize' ] },
-	{ name: 'colors', items: [ 'TextColor', 'BGColor' ] },
-	{ name: 'others', items: [ '-' ] },
-	{ name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-	'/',
-	{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat', 'ecleanalltext', 'autoformat' ] },
-	{ name: 'links', items: [ 'Link', 'Unlink', 'Anchor' ] },
-	{ name: 'insert', items: [ 'Image', 'etranmore', 'etranmedia', 'etranfile', '-', 'Table', 'HorizontalRule', 'SpecialChar', 'equotetext', 'einserttime', 'einsertpage', 'einsertbr' ] },
-	{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ], items: [ 'Find', 'Replace', '-', 'SelectAll', 'Maximize' ] }
-];
-
-
 	config.extraPlugins = 'etranfile,etranmedia,etranmore,autoformat,ecleanalltext,einsertbr,einsertpage,einserttime,equotetext';
 	
 	
-	config.toolbar = 'custom';
+	config.toolbar = 'full';
 	
 	
 	
