@@ -70,4 +70,63 @@ function user_ShowListMorePage($num,$page,$dolink,$type,$totalpage,$line,$ok,$se
 	$pager['showpage']=$returnstr;
 	return $pager;
 }
+
+//内容分页
+function user_ShowTextPage($totalpage,$page,$dolink,$add,$type,$search=""){
+	global $fun_r,$public_r;
+	if($totalpage==1)
+	{
+		return '';
+	}
+	$page_line=$public_r['textpagelistnum'];
+	$snum=2;
+	//$totalpage=ceil($num/$line);//取得总页数
+	$firststr='<li class="page-item class="disabled"><a class="page-link" title="Total record">'.$page.'/'.$totalpage.'</a></li>';
+	//上一页
+	if($page<>1)
+	{
+		$toppage='<li class="page-item"><a class="page-link" href="'.$dolink.$add[filename].$type.'">'.$fun_r['startpage'].'</a></li>';
+		$pagepr=$page-1;
+		if($pagepr==1)
+		{
+			$prido=$add[filename].$type;
+		}
+		else
+		{
+			$prido=$add[filename].'_'.$pagepr.$type;
+		}
+		$prepage='<li class="page-item"><a class="page-link" href="'.$dolink.$prido.'">'.$fun_r['pripage'].'</a></li>';
+	}
+	//下一页
+	if($page!=$totalpage)
+	{
+		$pagenex=$page+1;
+		$nextpage='<li class="page-item"><a class="page-link" href="'.$dolink.$add[filename].'_'.$pagenex.$type.'">'.$fun_r['nextpage'].'</a></li>';
+		$lastpage='<li class="page-item"><a class="page-link" href="'.$dolink.$add[filename].'_'.$totalpage.$type.'">'.$fun_r['lastpage'].'</a></li>';
+	}
+	$starti=$page-$snum<1?1:$page-$snum;
+	$no=0;
+	for($i=$starti;$i<=$totalpage&&$no<$page_line;$i++)
+	{
+		$no++;
+		if($page==$i)
+		{
+			$is_1='<li class="page-item class="active"><a class="page-link" href="#">';
+			$is_2="</a></li>";
+		}
+		elseif($i==1)
+		{
+			$is_1='<li class="page-item"><a class="page-link" href="'.$dolink.$add[filename].$type.'">';
+			$is_2="</a></li>";
+		}
+		else
+		{
+			$is_1='<li class="page-item"><a class="page-link" href="'.$dolink.$add[filename].'_'.$i.$type.'">';
+			$is_2="</a></li>";
+		}
+		$returnstr.=''.$is_1.$i.$is_2;
+	}
+	$returnstr=$firststr.$toppage.$prepage.$returnstr.$nextpage.$lastpage;
+	return $returnstr;
+}
 ?>
