@@ -1,7 +1,7 @@
 <?php
 if(!defined('InEmpireCMS'))
 {
-	exit();
+  exit();
 }
 ?>
 <?php
@@ -16,19 +16,19 @@ $searchisgoods='';
 $searchfirsttitles='';
 if($showisgood>0)
 {
-	$searchisgoods=str_replace('<option value="'.$showisgood.'">','<option value="'.$showisgood.'" selected>',$ftnr['igname']);
+  $searchisgoods=str_replace('<option value="'.$showisgood.'">','<option value="'.$showisgood.'" selected>',$ftnr['igname']);
 }
 else
 {
-	$searchisgoods=$ftnr['igname'];
+  $searchisgoods=$ftnr['igname'];
 }
 if($showfirsttitle>0)
 {
-	$searchfirsttitles=str_replace('<option value="'.$showfirsttitle.'">','<option value="'.$showfirsttitle.'" selected>',$ftnr['ftname']);
+  $searchfirsttitles=str_replace('<option value="'.$showfirsttitle.'">','<option value="'.$showfirsttitle.'" selected>',$ftnr['ftname']);
 }
 else
 {
-	$searchfirsttitles=$ftnr['ftname'];
+  $searchfirsttitles=$ftnr['ftname'];
 }
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -54,48 +54,48 @@ function GetSelectId(form)
   var dh='';
   for (var i=0;i<form.elements.length;i++)
   {
-	var e = form.elements[i];
-	if (e.name == 'id[]')
-	{
-	   if(e.checked==true)
-	   {
-       		ids+=dh+e.value;
-			dh=',';
-	   }
-	}
+  var e = form.elements[i];
+  if (e.name == 'id[]')
+  {
+     if(e.checked==true)
+     {
+          ids+=dh+e.value;
+      dh=',';
+     }
+  }
   }
   return ids;
 }
 
 function PushInfoToSp(form)
 {
-	var id='';
-	id=GetSelectId(form);
-	if(id=='')
-	{
-		alert('请选择要推送的信息');
-		return false;
-	}
-	window.open('sp/PushToSp.php?<?=$ecms_hashur['ehref']?>&classid=<?=$classid?>&id='+id,'PushToSp','width=360,height=500,scrollbars=yes,left=300,top=150,resizable=yes');
+  var id='';
+  id=GetSelectId(form);
+  if(id=='')
+  {
+    alert('请选择要推送的信息');
+    return false;
+  }
+  window.open('sp/PushToSp.php?<?=$ecms_hashur['ehref']?>&classid=<?=$classid?>&id='+id,'PushToSp','width=360,height=500,scrollbars=yes,left=300,top=150,resizable=yes');
 }
 
 function PushInfoToZt(form)
 {
-	var id='';
-	id=GetSelectId(form);
-	if(id=='')
-	{
-		alert('请选择要推送的信息');
-		return false;
-	}
-	window.open('special/PushToZt.php?<?=$ecms_hashur['ehref']?>&classid=<?=$classid?>&id='+id,'PushToZt','width=360,height=500,scrollbars=yes,left=300,top=150,resizable=yes');
+  var id='';
+  id=GetSelectId(form);
+  if(id=='')
+  {
+    alert('请选择要推送的信息');
+    return false;
+  }
+  window.open('special/PushToZt.php?<?=$ecms_hashur['ehref']?>&classid=<?=$classid?>&id='+id,'PushToZt','width=360,height=500,scrollbars=yes,left=300,top=150,resizable=yes');
 }
 </script>
 </head>
 <body>
 <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
   <tr> 
-    <td width="52%">位置： 
+    <td width="52%">གནས་ཡུལ： 
       <?=$url?>
     </td>
     <td width="48%"> <div align="right">[<a href="AddClass.php?enews=EditClass&classid=<?=$classid?><?=$ecms_hashur['ehref']?>">栏目设置</a>] 
@@ -111,14 +111,14 @@ function PushInfoToZt(form)
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr> 
             <td width="24%"> <div align="left" class="emenubutton"> 
-                <input type=button name=button value="增加信息" onClick="self.location.href='AddNews.php?enews=AddNews&ecmsnfrom=1<?=$addecmscheck?>&bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$ecms_hashur['ehref']?>'">
+                <input type=button name=button value="རྩོམ་ཡིག་ཁ་སྣོན།" onClick="self.location.href='AddNews.php?enews=AddNews&ecmsnfrom=1<?=$addecmscheck?>&bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$ecms_hashur['ehref']?>'">
               </div></td>
             <td width="76%"> </td>
           </tr>
         </table></td> 
     </tr>
     <tr>
-      <td width="24%" bgcolor="#FFFFFF" title="增加信息后使用本操作将信息显示到前台"> 
+      <td width="30%" bgcolor="#FFFFFF" title="增加信息后使用本操作将信息显示到前台"> 
         <div align="left">
           <select name="dore">
             <option value="1">刷新当前栏目</option>
@@ -126,35 +126,35 @@ function PushInfoToZt(form)
             <option value="3">刷新父栏目</option>
             <option value="4">刷新当前栏目与父栏目</option>
             <option value="5">刷新父栏目与首页</option>
-            <option value="6" selected>刷新当前栏目、父栏目与首页</option>
+            <option value="6" selected>ལེ་ཚན་འདི་དང་དེའི་ཕ་རྒྱུད་ལེ་ཚན། མདུན་ཤོག་བཅས་གསར་བསྒྱུར།</option>
           </select>
-          <input type="button" name="Submit12" value="提交" onclick="self.location.href='ecmsinfo.php?<?=$ecms_hashur['href']?>&enews=AddInfoToReHtml<?=$addecmscheck?>&classid=<?=$classid?>&dore='+document.searchinfo.dore.value;">
-          </div></td><td width="76%" height="32" bgcolor="#FFFFFF"><div align="right">搜索: 
+          <input type="button" name="Submit12" value="འབུལ་སྤྲོད།" onclick="self.location.href='ecmsinfo.php?<?=$ecms_hashur['href']?>&enews=AddInfoToReHtml<?=$addecmscheck?>&classid=<?=$classid?>&dore='+document.searchinfo.dore.value;">
+          </div></td><td width="70%" height="32" bgcolor="#FFFFFF"><div align="right">搜索: 
           <select name="showspecial" id="showspecial">
             <option value="0"<?=$showspecial==0?' selected':''?>>不限属性</option>
-			<option value="1"<?=$showspecial==1?' selected':''?>>置顶</option>
+      <option value="1"<?=$showspecial==1?' selected':''?>>置顶</option>
             <option value="2"<?=$showspecial==2?' selected':''?>>推荐</option>
             <option value="3"<?=$showspecial==3?' selected':''?>>头条</option>
-			<option value="7"<?=$showspecial==7?' selected':''?>>投稿</option>
+      <option value="7"<?=$showspecial==7?' selected':''?>>投稿</option>
             <option value="5"<?=$showspecial==5?' selected':''?>>签发</option>
-			<option value="8"<?=$showspecial==8?' selected':''?>>我的信息</option>
+      <option value="8"<?=$showspecial==8?' selected':''?>>我的信息</option>
           </select>
-		  <select name="showisgood" id="showisgood">
+      <select name="showisgood" id="showisgood">
             <option value="0"<?=$showisgood==0?' selected':''?>>不限推荐</option>
-	    	<option value="-1"<?=$showisgood==-1?' selected':''?>>所有推荐</option>
-	    	<?=$searchisgoods?>
+        <option value="-1"<?=$showisgood==-1?' selected':''?>>所有推荐</option>
+        <?=$searchisgoods?>
           </select>
           <select name="showfirsttitle" id="showfirsttitle">
             <option value="0"<?=$showfirsttitle==0?' selected':''?>>不限头条</option>
-	    	<option value="-1"<?=$showfirsttitle==-1?' selected':''?>>所有头条</option>
-	    	<?=$searchfirsttitles?>
+        <option value="-1"<?=$showfirsttitle==-1?' selected':''?>>所有头条</option>
+        <?=$searchfirsttitles?>
           </select>
           <input name="keyboard" type="text" id="keyboard" value="<?=$keyboard?>" size="16">
           <select name="show">
             <option value="0" selected>不限字段</option>
             <?=$searchoptions_r['select']?>
           </select>
-		  <?=$stts?>
+      <?=$stts?>
           <select name="infolday" id="infolday">
             <option value="1"<?=$infolday==1?' selected':''?>>全部时间</option>
             <option value="86400"<?=$infolday==86400?' selected':''?>>1 天</option>
@@ -174,7 +174,7 @@ function PushInfoToZt(form)
           <input name="sear" type="hidden" id="sear" value="1">
           <input name="bclassid" type="hidden" id="bclassid" value="<?=$bclassid?>">
           <input name="classid" type="hidden" id="classid" value="<?=$classid?>">
-		  <input name="ecmscheck" type="hidden" id="ecmscheck" value="<?=$ecmscheck?>">
+      <input name="ecmscheck" type="hidden" id="ecmscheck" value="<?=$ecmscheck?>">
       </div></td>
     </tr>
   </form>
@@ -191,118 +191,118 @@ function PushInfoToZt(form)
   <input name="ecmscheck" type="hidden" id="ecmscheck" value="<?=$ecmscheck?>">
   <table width="100%" border="0" cellspacing="1" cellpadding="0">
     <tr>
-      <td width="10%" height="25"<?=$indexchecked==1?' class="header"':' bgcolor="#C9F1FF"'?> title="已发布信息总数：<?=$classinfos?>"><div align="center"><a href="ListNews.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$ecms_hashur['ehref']?>">已发布 (<?=$classinfos?>)</a></div></td>
-      <td width="10%"<?=$indexchecked==0?' class="header"':' bgcolor="#C9F1FF"'?> title="待审核信息总数：<?=$classckinfos?>"><div align="center"><a href="ListNews.php?bclassid=<?=$bclassid?>&classid=<?=$classid?>&ecmscheck=1<?=$ecms_hashur['ehref']?>">待审核 (<?=$classckinfos?>)</a></div></td>
-      <td width="10%" bgcolor="#C9F1FF"><div align="center"><a href="ListInfoDoc.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$addecmscheck?><?=$ecms_hashur['ehref']?>">归档</a></div></td>
+      <td width="10%" height="25"<?=$indexchecked==1?' class="header"':' bgcolor="#C9F1FF"'?> title="已发布信息总数：<?=$classinfos?>"><div align="center"><a href="ListNews.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$ecms_hashur['ehref']?>">སྤེལ་ཟིན་པ (<?=$classinfos?>)</a></div></td>
+      <td width="10%"<?=$indexchecked==0?' class="header"':' bgcolor="#C9F1FF"'?> title="待审核信息总数：<?=$classckinfos?>"><div align="center"><a href="ListNews.php?bclassid=<?=$bclassid?>&classid=<?=$classid?>&ecmscheck=1<?=$ecms_hashur['ehref']?>">བཤེར་སྒུག (<?=$classckinfos?>)</a></div></td>
+      <td width="10%" bgcolor="#C9F1FF"><div align="center"><a href="ListInfoDoc.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$addecmscheck?><?=$ecms_hashur['ehref']?>">ཡིག་མཛོད།</a></div></td>
       <td width="58%">&nbsp;</td>
       <td width="6%">&nbsp;</td>
       <td width="6%">&nbsp;</td>
     </tr>
   </table>
   <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1" class="tableborder">
-  	<tr class="header"> 
+    <tr class="header"> 
       <td height="25" colspan="8"><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr> 
-            <td width="60%"><font color="#ffffff"><a href="ListNews.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$addecmscheck?>&sear=1&showspecial=8<?=$ecms_hashur['ehref']?>">我的信息</a> 
+            <td width="60%"><font color="#ffffff"><a href="ListNews.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$addecmscheck?>&sear=1&showspecial=8<?=$ecms_hashur['ehref']?>">ངས་སྤེལ་བ།</a> 
               | <a href="ListNews.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$addecmscheck?>&sear=1&showspecial=5<?=$ecms_hashur['ehref']?>">签发信息</a> 
               | <a href="ListNews.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$addecmscheck?>&sear=1&showspecial=7<?=$ecms_hashur['ehref']?>">投稿信息</a> 
               | <a href="ListNews.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$addecmscheck?>&showretitle=1&srt=1<?=$ecms_hashur['ehref']?>" title="查询重复标题，并保留一条信息">查询重复标题A</a> 
               | <a href="ListNews.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$addecmscheck?>&showretitle=1&srt=0<?=$ecms_hashur['ehref']?>" title="查询重复标题的信息(不保留信息)">查询重复标题B</a> 
               | <a href="ecmsinfo.php?bclassid=<?=$bclassid?>&classid=<?=$classid?><?=$addecmscheck?>&enews=SetAllCheckInfo<?=$ecms_hashur['href']?>" title="本栏目所有信息全设为审核状态" onclick="return confirm('确认要操作?');">审核栏目全部信息</a></font> 
             </td>
-            <td width="40%"> <div align="right"><font color="#ffffff"><a href="openpage/AdminPage.php?leftfile=<?=urlencode('../file/FileNav.php'.$ecms_hashur['whehref'])?>&mainfile=<?=urlencode('../file/ListFile.php?type=9&classid='.$classid.$ecms_hashur['ehref'])?>&title=<?=urlencode('管理附件')?><?=$ecms_hashur['ehref']?>" target="_blank">管理附件</a> | <a href="ReHtml/ChangeData.php<?=$ecms_hashur['whehref']?>" target=_blank>更新数据</a> | <a href=../../ target=_blank>预览首页</a> | <a href="<?=$classurl?>" target=_blank>预览栏目</a></font></div></td>
+            <td width="40%"> <div align="right"><font color="#ffffff"><a href="openpage/AdminPage.php?leftfile=<?=urlencode('../file/FileNav.php'.$ecms_hashur['whehref'])?>&mainfile=<?=urlencode('../file/ListFile.php?type=9&classid='.$classid.$ecms_hashur['ehref'])?>&title=<?=urlencode('管理附件')?><?=$ecms_hashur['ehref']?>" target="_blank">ཞར་བྱུང་དོ་དམ།</a> | <a href="ReHtml/ChangeData.php<?=$ecms_hashur['whehref']?>" target=_blank>གཞི་གྲངས་གསར་བཅོས།</a> | <a href=../../ target=_blank>མདུན་ཤོག་ལ་སྔོན་ལྟ།</a> | <a href="<?=$classurl?>" target=_blank>དཀར་ཆག་ལ་སྔོན་ལྟ།</a></font></div></td>
           </tr>
         </table></td>
     </tr>
     <tr> 
       <td width="3%"><div align="center"></div></td>
       <td width="6%" height="25"><div align="center"><a href='ListNews.php?<?=$search1?>&myorder=4'><u>ID</u></a></div></td>
-      <td width="36%" height="25"> <div align="center">标题</div></td>
-      <td width="12%" height="25"><div align="center">发布者</div></td>
-      <td width="16%" height="25"> <div align="center"><a href='ListNews.php?<?=$search1?>&myorder=1'><u>发布时间</u></a></div></td>
-	  <td width="7%" height="25"><div align="center"><a href='ListNews.php?<?=$search1?>&myorder=3'><u>点击</u></a></div></td>
-      <td width="6%"><div align="center"><a href='ListNews.php?<?=$search1?>&myorder=2'><u>评论</u></a></div></td>
-      <td width="14%" height="25"> <div align="center">操作</div></td>
+      <td width="36%" height="25"> <div align="center">ཁ་བྱང་།</div></td>
+      <td width="12%" height="25"><div align="center">སྤེལ་མཁན།</div></td>
+      <td width="16%" height="25"> <div align="center"><a href='ListNews.php?<?=$search1?>&myorder=1'><u>སྤེལ་དུས།</u></a></div></td>
+    <td width="7%" height="25"><div align="center"><a href='ListNews.php?<?=$search1?>&myorder=3'><u>རྡེབ་གྲངས།</u></a></div></td>
+      <td width="6%"><div align="center"><a href='ListNews.php?<?=$search1?>&myorder=2'><u>དཔྱད་མཆན།</u></a></div></td>
+      <td width="14%" height="25"> <div align="center">བཀོལ་སྤྱོད།</div></td>
     </tr>
     <?php
-	while($r=$empire->fetch($sql))
-	{
-		//状态
-		$st='';
-		if($r[istop])//置顶
-		{
-			$st.="<font color=red>[顶".$r[istop]."]</font>";
-		}
-		if($r[isgood])//推荐
-		{
-			$st.="<font color=red>[".$ignamer[$r['isgood']]."]</font>";
-		}
-		if($r[firsttitle])//头条
-		{
-			$st.="<font color=red>[".$ftnamer[$r['firsttitle']]."]</font>";
-		}
-		//时间
-		$truetime=date("Y-m-d H:i:s",$r[truetime]);
-		$lastdotime=date("Y-m-d H:i:s",$r[lastdotime]);
-		$oldtitle=$r[title];
-		// $r[title]=stripSlashes(sub($r[title],0,50,false));
+  while($r=$empire->fetch($sql))
+  {
+    //状态
+    $st='';
+    if($r[istop])//置顶
+    {
+      $st.="<font color=red>[顶".$r[istop]."]</font>";
+    }
+    if($r[isgood])//推荐
+    {
+      $st.="<font color=red>[".$ignamer[$r['isgood']]."]</font>";
+    }
+    if($r[firsttitle])//头条
+    {
+      $st.="<font color=red>[".$ftnamer[$r['firsttitle']]."]</font>";
+    }
+    //时间
+    $truetime=date("Y-m-d H:i:s",$r[truetime]);
+    $lastdotime=date("Y-m-d H:i:s",$r[lastdotime]);
+    $oldtitle=$r[title];
+    // $r[title]=stripSlashes(sub($r[title],0,50,false));
     $r[title]=stripSlashes($r[title]);
-		//审核
-		if(empty($indexchecked))
-		{
-			$checked=" title='未审核' style='background:#99C4E3'";
-			$titleurl="ShowInfo.php?classid=$r[classid]&id=$r[id]".$addecmscheck.$ecms_hashur['ehref'];
-		}
-		else
-		{
-			$checked="";
-			$titleurl=sys_ReturnBqTitleLink($r);
-		}
-		//会员投稿
-		if($r[ismember])
-		{
-			$r[username]="<a href='member/AddMember.php?enews=EditMember&userid=".$r[userid].$ecms_hashur['ehref']."' target='_blank'><font color=red>".$r[username]."</font></a>";
-		}
-		//签发
-		$qf="";
-		if($r[isqf])
-		{
-			$qfr=$empire->fetch1("select checktno,tstatus from {$dbtbpre}enewswfinfo where id='$r[id]' and classid='$r[classid]' limit 1");
-			if($qfr[checktno]=='100')
-			{
-				$qf="(<font color='red'>已通过</font>)";
-			}
-			elseif($qfr[checktno]=='101')
-			{
-				$qf="(<font color='red'>返工</font>)";
-			}
-			elseif($qfr[checktno]=='102')
-			{
-				$qf="(<font color='red'>已否决</font>)";
-			}
-			else
-			{
-				$qf="(<font color='red'>$qfr[tstatus]</font>)";
-			}
-			$qf="<a href='#ecms' onclick=\"window.open('workflow/DoWfInfo.php?classid=$r[classid]&id=$r[id]".$addecmscheck.$ecms_hashur['ehref']."','','width=600,height=520,scrollbars=yes');\">".$qf."</a>";
-		}
-		//标题图片
-		$showtitlepic="";
-		if($r[titlepic])
-		{
-			$showtitlepic="<a href='".$r['titlepic']."' title='预览标题图片' target=_blank><img src='../data/images/showimg.gif' border=0></a>";
-		}
-		//未生成
-		$myid="<a href='ecmschtml.php?enews=ReSingleInfo&classid=$r[classid]&id[]=".$r[id].$ecms_hashur['href']."'>".$r['id']."</a>";
-		if(empty($r[havehtml]))
-		{
-			$myid="<a href='ecmschtml.php?enews=ReSingleInfo&classid=$r[classid]&id[]=".$r[id].$ecms_hashur['href']."' title='未生成'><b>".$r[id]."</b></a>";
-		}
-	?>
+    //审核
+    if(empty($indexchecked))
+    {
+      $checked=" title='未审核' style='background:#99C4E3'";
+      $titleurl="ShowInfo.php?classid=$r[classid]&id=$r[id]".$addecmscheck.$ecms_hashur['ehref'];
+    }
+    else
+    {
+      $checked="";
+      $titleurl=sys_ReturnBqTitleLink($r);
+    }
+    //会员投稿
+    if($r[ismember])
+    {
+      $r[username]="<a href='member/AddMember.php?enews=EditMember&userid=".$r[userid].$ecms_hashur['ehref']."' target='_blank'><font color=red>".$r[username]."</font></a>";
+    }
+    //签发
+    $qf="";
+    if($r[isqf])
+    {
+      $qfr=$empire->fetch1("select checktno,tstatus from {$dbtbpre}enewswfinfo where id='$r[id]' and classid='$r[classid]' limit 1");
+      if($qfr[checktno]=='100')
+      {
+        $qf="(<font color='red'>已通过</font>)";
+      }
+      elseif($qfr[checktno]=='101')
+      {
+        $qf="(<font color='red'>返工</font>)";
+      }
+      elseif($qfr[checktno]=='102')
+      {
+        $qf="(<font color='red'>已否决</font>)";
+      }
+      else
+      {
+        $qf="(<font color='red'>$qfr[tstatus]</font>)";
+      }
+      $qf="<a href='#ecms' onclick=\"window.open('workflow/DoWfInfo.php?classid=$r[classid]&id=$r[id]".$addecmscheck.$ecms_hashur['ehref']."','','width=600,height=520,scrollbars=yes');\">".$qf."</a>";
+    }
+    //标题图片
+    $showtitlepic="";
+    if($r[titlepic])
+    {
+      $showtitlepic="<a href='".$r['titlepic']."' title='预览标题图片' target=_blank><img src='../data/images/showimg.gif' border=0></a>";
+    }
+    //未生成
+    $myid="<a href='ecmschtml.php?enews=ReSingleInfo&classid=$r[classid]&id[]=".$r[id].$ecms_hashur['href']."'>".$r['id']."</a>";
+    if(empty($r[havehtml]))
+    {
+      $myid="<a href='ecmschtml.php?enews=ReSingleInfo&classid=$r[classid]&id[]=".$r[id].$ecms_hashur['href']."' title='未生成'><b>".$r[id]."</b></a>";
+    }
+  ?>
     <tr bgcolor="#FFFFFF" onmouseout="this.style.backgroundColor='#ffffff'" onmouseover="this.style.backgroundColor='#C3EFFF'" id=news<?=$r[id]?>> 
       <td><div align="center"> 
           <input name="id[]" type="checkbox" id="id[]" value="<?=$r[id]?>"<?=$checked?>>
-		  <input name="infoid[]" type="hidden" value="<?=$r['id']?>">
+      <input name="infoid[]" type="hidden" value="<?=$r['id']?>">
         </div></td>
       <td height="32"> <div align="center"> 
           <?=$myid?>
@@ -319,7 +319,7 @@ function PushInfoToZt(form)
           <?=$r[username]?>
         </div></td>
       <td height="25" title="<? echo"增加时间：".$truetime."\r\n最后修改：".$lastdotime;?>"> <div align="center"> 
-		  <input name="newstime[]" type="text" value="<?=date("Y-m-d H:i:s",$r[newstime])?>" size="20">
+      <input name="newstime[]" type="text" value="<?=date("Y-m-d H:i:s",$r[newstime])?>" size="20">
         </div></td>
       <td height="25"> <div align="center"> <a title="下载次数:<?=$r[totaldown]?>"> 
           <?=$r[onclick]?>
@@ -327,37 +327,37 @@ function PushInfoToZt(form)
       <td><div align="center"><a href="pl/ListPl.php?id=<?=$r[id]?>&classid=<?=$classid?>&bclassid=<?=$bclassid?><?=$addecmscheck?><?=$ecms_hashur['ehref']?>" target=_blank title="管理评论"><u> 
           <?=$r[plnum]?>
           </u></a></div></td>
-      <td height="25"> <div align="center"><a href="AddNews.php?enews=EditNews&id=<?=$r[id]?>&classid=<?=$classid?>&bclassid=<?=$bclassid?><?=$addecmscheck?><?=$ecms_hashur['ehref']?>">修改</a> | <a href="#empirecms" onclick="window.open('info/EditInfoSimple.php?enews=EditNews&id=<?=$r[id]?>&classid=<?=$classid?>&bclassid=<?=$bclassid?><?=$addecmscheck?><?=$ecms_hashur['ehref']?>','EditInfoSimple','width=600,height=360,scrollbars=yes,resizable=yes');">简改</a> | <a href="ecmsinfo.php?enews=DelNews&id=<?=$r[id]?>&classid=<?=$classid?>&bclassid=<?=$bclassid?><?=$addecmscheck?><?=$ecms_hashur['href']?>" onClick="return confirm('确认要删除？');">删除</a>
+      <td height="25"> <div align="center"><a href="AddNews.php?enews=EditNews&id=<?=$r[id]?>&classid=<?=$classid?>&bclassid=<?=$bclassid?><?=$addecmscheck?><?=$ecms_hashur['ehref']?>">བཟོ་བཅོས།</a> | <a href="#empirecms" onclick="window.open('info/EditInfoSimple.php?enews=EditNews&id=<?=$r[id]?>&classid=<?=$classid?>&bclassid=<?=$bclassid?><?=$addecmscheck?><?=$ecms_hashur['ehref']?>','EditInfoSimple','width=600,height=360,scrollbars=yes,resizable=yes');">སླ་བཅོས།</a> | <a href="ecmsinfo.php?enews=DelNews&id=<?=$r[id]?>&classid=<?=$classid?>&bclassid=<?=$bclassid?><?=$addecmscheck?><?=$ecms_hashur['href']?>" onClick="return confirm('确认要删除？');">བསུབ།</a>
         </div></td>
     </tr>
     <?
-	}
-	?>
+  }
+  ?>
     <tr bgcolor="#FFFFFF"> 
       <td height="25"> <div align="center">
           <input type=checkbox name=chkall value=on onClick="CheckAll(this.form)">
         </div></td>
       <td height="25" colspan="7"><div align="right">
-          <input type="submit" name="Submit3" value="删除" onClick="document.listform.enews.value='DelNews_all';document.listform.action='ecmsinfo.php';">
-		  <?php
-		  if($ecmscheck)
-		  {
-		  ?>
-		  <input type="submit" name="Submit8" value="审核" onClick="document.listform.enews.value='CheckNews_all';document.listform.action='ecmsinfo.php';">
-		  <?php
-		  }
-		  else
-		  {
-		  ?>
-		  <input type="submit" name="Submit9" value="取消审核" onClick="document.listform.enews.value='NoCheckNews_all';document.listform.action='ecmsinfo.php';">
-		  <input type="submit" name="Submit8" value="刷新" onClick="document.listform.enews.value='ReSingleInfo';document.listform.action='ecmschtml.php';">
-		  <input type="button" name="Submit112" value="推送" onClick="PushInfoToSp(this.form);">
-		  <?php
-		  }
-		  ?>
+          <input type="submit" name="Submit3" value="བསུབ།" onClick="document.listform.enews.value='DelNews_all';document.listform.action='ecmsinfo.php';">
+      <?php
+      if($ecmscheck)
+      {
+      ?>
+      <input type="submit" name="Submit8" value="མཆན་སྤྲོད།" onClick="document.listform.enews.value='CheckNews_all';document.listform.action='ecmsinfo.php';">
+      <?php
+      }
+      else
+      {
+      ?>
+      <input type="submit" name="Submit9" value="མཆན་སྤྲོད་ལས་འདོར།" onClick="document.listform.enews.value='NoCheckNews_all';document.listform.action='ecmsinfo.php';">
+      <input type="submit" name="Submit8" value="གསར་བསྒྱུར།" onClick="document.listform.enews.value='ReSingleInfo';document.listform.action='ecmschtml.php';">
+      <input type="button" name="Submit112" value="འདེད་གཏོང་།" onClick="PushInfoToSp(this.form);">
+      <?php
+      }
+      ?>
           <select name="isgood" id="isgood">
             <option value="0">不推荐</option>
-			<?=$ftnr['igname']?>
+      <?=$ftnr['igname']?>
           </select>
           <input type="submit" name="Submit82" value="推荐" onClick="document.listform.enews.value='GoodInfo_all';document.listform.doing.value='0';document.listform.action='ecmsinfo.php';">
           <select name="firsttitle" id="firsttitle">
@@ -374,13 +374,13 @@ function PushInfoToZt(form)
             <option value="4">四级置顶</option>
             <option value="5">五级置顶</option>
             <option value="6">六级置顶</option>
-			<option value="7">七级置顶</option>
-			<option value="8">八级置顶</option>
-			<option value="9">九级置顶</option>
+      <option value="7">七级置顶</option>
+      <option value="8">八级置顶</option>
+      <option value="9">九级置顶</option>
           </select>
           <input type="submit" name="Submit7" value="置顶" onClick="document.listform.enews.value='TopNews_all';document.listform.action='ecmsinfo.php';">
-		  <input type="submit" name="Submit7" value="修改时间" onClick="document.listform.enews.value='EditMoreInfoTime';document.listform.action='ecmsinfo.php';">
-		  <input type="button" name="Submit52" value="推送至专题" onClick="PushInfoToZt(this.form);">
+      <input type="submit" name="Submit7" value="修改时间" onClick="document.listform.enews.value='EditMoreInfoTime';document.listform.action='ecmsinfo.php';">
+      <input type="button" name="Submit52" value="推送至专题" onClick="PushInfoToZt(this.form);">
         </div></td>
     </tr>
     <tr bgcolor="#FFFFFF"> 
@@ -390,9 +390,9 @@ function PushInfoToZt(form)
               <?=$returnpage?>
             </td>
             <td width="32%"> <div align="right">
-			<span id="moveclassnav"></span>
-                <input type="submit" name="Submit5" value="移动" onClick="document.listform.enews.value='MoveNews_all';document.listform.action='ecmsinfo.php';">
-                <input type="submit" name="Submit6" value="复制" onClick="document.listform.enews.value='CopyNews_all';document.listform.action='ecmsinfo.php';">
+      <span id="moveclassnav"></span>
+                <input type="submit" name="Submit5" value="སྤོ་བསྣུར།" onClick="document.listform.enews.value='MoveNews_all';document.listform.action='ecmsinfo.php';">
+                <input type="submit" name="Submit6" value="མཁོ་ཕབ།" onClick="document.listform.enews.value='CopyNews_all';document.listform.action='ecmsinfo.php';">
               </div></td>
           </tr>
         </table></td>
