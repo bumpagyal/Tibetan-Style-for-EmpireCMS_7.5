@@ -7,11 +7,11 @@
 - 升级时如果您改了“e/admin”目录名，请先将目录名改回“e/admin”；（升级完成后再修改回来）
 - 升级时如果您改了"e/class/userfun.php"文件，先备份一下然后添加自定义代码
 
-## 藏文 Web onts 调用方法
+## 藏文 Web fonts 调用方法
 
 前台HTML页面上调用如下代码：
 ```html
-<link rel="stylesheet" href="/e/extend/tibetan-style/css/base-style.min.css">
+<link rel="stylesheet" href="[!--news.url--]e/extend/tibetan-style/css/base-style.min.css">
 <script src="[!--news.url--]e/extend/tibetan-style/js/tibetan-plugin.js"></script>
 ```
 
@@ -26,7 +26,7 @@ body {
 - 本项目采用"Jomolhari"作为默认藏文字体
 - 如果需要"Noto Sans Tibetan"藏文字体版本，请在本项目的releases里下载v2.1.4版本
 - 如果需要"珠穆朗玛"藏文字体版本，请在本项目的releases里下载v1.0版本
-- 增加了对BootStrap 4 中分页样式的支持，如果需要使用请到帝国cms后台，找到【系统】-【系统参数设置】-【信息设置】-【列表分页函数(列表)】，把里面的函数换成【user_ShowListMorePage】函数
+- 增加了对BootStrap 4 中分页样式的支持，如果需要使用请到帝国cms后台，找到【系统】-【系统参数设置】-【信息设置】-【列表分页函数(列表)】，把里面的函数换成【user_ShowListMorePage】函数，内容分页函数换成【user_ShowTextPage】函数
 - ecmseditor编辑器增加了藏文字体
 - 增加了信息管理列表中的标题字数
 - 简体中文语言包里常用的一部分翻译成了藏文
